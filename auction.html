@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap" rel="stylesheet">
+    <script src="../jquery-3.5.1.min.js"></script>
+    <title>Fancy Art</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="leftwrapper">
+            <ul>
+                <li><a class="leftli" href="../Main.html">Home</a></li>
+                <li><a class="leftli" href="">Auction</a></li>
+                <li><a class="leftli" href="../Gallery/gallery.html">Gallery</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="leftli">About</a>
+                        <div class="dropdown-content">
+                            <a href="../ABOUT/about1.html">History of the company</a>
+                            <a href="../ABOUT/about2.html">Information</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="centerwrapper">
+            <img src="../Logo2.png" class="gambarlogo" alt="Logo2">
+        </div>
+        <div class="rightwrapper">
+            <ul>
+                <li><a class="rightli" href="../Register/register.html">Registration</a></li>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="image">
+            <img src="../Gallery/birmingham-museums-trust-sJr8LDyEf7k-unsplash.jpg" >
+            <div class="desc">ALCAZAR, SEGOVIA, SPAIN <br> 1836 BY DAVID <br><br>
+                CURRENT BID: <br> Rp.1,000,000,00 <br><br>
+                TIME REMAINING:
+                <p id="time"></p></div>   
+            </div>
+        </div>
+        <script>
+            
+            var countDownDate = new Date("Jun 30, 2020 2:37:25").getTime();
+            
+            
+            var x = setInterval(function() {
+            
+              
+              var now = new Date().getTime();
+                
+              
+              var distance = countDownDate - now;
+                
+              
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              
+              document.getElementById("time").innerHTML = days + "DAYS " + hours + ": "
+              + minutes + ": " + seconds + " ";
+                
+              
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("time").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+    </div>
+
+    <div class="container">
+        <div class="image">
+            <img src="../Gallery/birmingham-museums-trust-5ruS8plfbvM-unsplash.jpg" >
+            <div class="desc">VIEW NEAR NAPLES, <br>1781 BY FRANCIS TOWNE <br><br>
+                CURRENT BID: <br> Rp.1,000,000,00 <br><br>
+                TIME REMAINING
+                <p id="time2"></p></div>   
+            </div>
+        </div>
+        <script>
+            
+            var countDownDate = new Date("Jun 30, 2020 2:37:25").getTime();
+            
+            
+            var x = setInterval(function() {
+            
+              
+              var now = new Date().getTime();
+                
+              
+              var distance = countDownDate - now;
+                
+              
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              
+              document.getElementById("time2").innerHTML = days + "DAYS " + hours + ": "
+              + minutes + ": " + seconds + " ";
+                
+             
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("time2").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+    </div>
+
+    <div class="container">
+        <div class="image">
+            <img src="../Gallery/birmingham-museums-trust-BqaF65lS6E4-unsplash.jpg" >
+            <div class="desc">THE RIVER SEVERN AT<br>SHREWSBURY,<br>SHROPSHIRO, 1770 <br>BY PAUL SANDBY <br><br>
+                CURRENT BID: <br> Rp.1.000,000,00<br><br>
+                TIME REMAINING
+                <p id="time3"></p></div>   
+            </div>
+        </div> 
+        <script>
+            
+            var countDownDate = new Date("Jun 30, 2020 2:37:25").getTime();
+            
+            
+            var x = setInterval(function() {
+            
+              
+              var now = new Date().getTime();
+                
+              
+              var distance = countDownDate - now;
+                
+              
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              
+              document.getElementById("time3").innerHTML = days + "DAYS " + hours + ": "
+              + minutes + ": " + seconds + " ";
+                
+              
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("time3").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+    </div>
+
+    <div class="container">
+        <div class="image">
+            <img src="../Gallery/birmingham-museums-trust-HEEvYhNzpEo-unsplash.jpg" >
+            <div class="desc">THE RIVER SEVERN AT<br>SHREWSBURY,<br>SHROPSHIRO, 1770 <br>BY PAUL SANDBY<br><br>
+                CURRENT BID: <br> Rp.1,000,000,00 <br><br>
+                TIME REMAINING
+                <p id="time4"></p></div>   
+            </div>
+        </div>
+        <script>
+            
+            var countDownDate = new Date("Jun 30, 2020 2:37:25").getTime();
+            
+            
+            var x = setInterval(function() {
+            
+              
+              var now = new Date().getTime();
+                
+              
+              var distance = countDownDate - now;
+                
+              
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              
+              document.getElementById("time4").innerHTML = days + "DAYS " + hours + ": "
+              + minutes + ": " + seconds + " ";
+                
+              
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("time4").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+    </div>
+
+    <div class="container">
+        <div class="image">
+            <img src="../Gallery/birmingham-museums-trust-RpELX3wVm_U-unsplash.jpg" >
+            <div class="desc">THE OLD THEATRE<br>STORES, NEW STREET,<br>BIRMINGHAM,<br>BY G. WARREN BLACKHAM<br><br>
+                CURRENT BID: <br> Rp.1,000,000,00 <br><br>
+                TIME REMAINING
+                <p id="time5"></p></div>   
+            </div>
+        </div>
+        <script>
+            
+            var countDownDate = new Date("Jun 30, 2020 2:37:25").getTime();
+            
+            
+            var x = setInterval(function() {
+            
+              var now = new Date().getTime();
+                
+              var distance = countDownDate - now;
+                
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              document.getElementById("time5").innerHTML = days + "DAYS " + hours + ": "
+              + minutes + ": " + seconds + " ";
+                
+
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("time5").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="../Gallery/birmingham-museums-trust-X2QwsspYk_0-unsplash.jpg" >
+            <div class="desc">MOSELEY OLD MALL, <br>WOLVERHAMPTON<br>BY ALLEN EDWARD EVERITT <br><br>
+                CURRENT BID: <br> Rp.1,000,000,00 <br><br>
+                TIME REMAINING
+                <p id="time6"></p></div>   
+            </div>
+        </div>
+        <script>
+            
+            var countDownDate = new Date("Jun 30, 2020 2:37:25").getTime();
+            
+            var x = setInterval(function() {
+            
+              var now = new Date().getTime();
+                
+              
+              var distance = countDownDate - now;
+                
+              
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              
+              document.getElementById("time6").innerHTML = days + "DAYS " + hours + ": "
+              + minutes + ": " + seconds + " ";
+                
+              
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("time6").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+    </div>
+
+    <footer>
+        <center>
+            <p class="footercontent">
+                Copyright &copy; Group 7
+            </p>
+        </center>
+    </footer>
+
+</body>
+
+</html>
